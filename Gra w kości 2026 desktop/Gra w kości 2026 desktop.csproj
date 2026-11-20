@@ -94,5 +94,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\kosc0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\kosc1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\kosc2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\kosc3.png" />
+    <Resource Include="images\kosc4.png" />
+    <Resource Include="images\kosc5.png" />
+    <Resource Include="images\kosc6.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

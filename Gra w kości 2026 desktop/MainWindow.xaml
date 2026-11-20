@@ -5,8 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Gra_w_kości_2026_desktop"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="450" Width="250">
+    <Grid Background="#ED27C121">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" >
+            <Image x:Name="K1" Source="images/kosc0.png" Width="60" Height="60" Margin="10"></Image>
+            <Image x:Name="K2" Source="images/kosc0.png" Width="60" Height="60" Margin="10"></Image>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" >
+            <Image x:Name="K3" Source="images/kosc0.png" Width="60" Height="60" Margin="10"></Image>
+            <Image x:Name="K4" Source="images/kosc0.png" Width="60" Height="60" Margin="10"></Image>
+            <Image x:Name="K5" Source="images/kosc0.png" Width="60" Height="60" Margin="10"></Image>
+        </StackPanel>
+        <Button Grid.Row="3" Width="50" Height="20" Content="RZUT" Background="#ED275021" Foreground="White" VerticalAlignment="Top"/>
+        <Label Content="0" Grid.Row="3" HorizontalAlignment="Center" FontSize="30" VerticalAlignment="Center"></Label>
     </Grid>
 </Window>
