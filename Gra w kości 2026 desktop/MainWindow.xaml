@@ -6,24 +6,84 @@
         xmlns:local="clr-namespace:Gra_w_kości_2026_desktop"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="250">
-    <Grid Background="#ED27C121">
+ <Grid Background="#ED27C121">
+
         <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
-        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" >
-            <Image x:Name="K1" Source="images/kosc0.png" Width="60" Height="60" Margin="10"></Image>
-            <Image x:Name="K2" Source="images/kosc0.png" Width="60" Height="60" Margin="10"></Image>
+
+        <StackPanel Grid.Row="1"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center">
+
+            <Image x:Name="K1"
+                   Source="images/kosc0.png"
+                   Width="60"
+                   Height="60"
+                   Margin="10"
+                   Tag="0"
+                   MouseDown="Kosc_Click"/>
+
+            <Image x:Name="K2"
+                   Source="images/kosc0.png"
+                   Width="60"
+                   Height="60"
+                   Margin="10"
+                   Tag="1"
+                   MouseDown="Kosc_Click"/>
+
         </StackPanel>
-        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" >
-            <Image x:Name="K3" Source="images/kosc0.png" Width="60" Height="60" Margin="10"></Image>
-            <Image x:Name="K4" Source="images/kosc0.png" Width="60" Height="60" Margin="10"></Image>
-            <Image x:Name="K5" Source="images/kosc0.png" Width="60" Height="60" Margin="10"></Image>
+
+        <StackPanel Grid.Row="2"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center">
+
+            <Image x:Name="K3"
+                   Source="images/kosc0.png"
+                   Width="60"
+                   Height="60"
+                   Margin="10"
+                   Tag="2"
+                   MouseDown="Kosc_Click"/>
+
+            <Image x:Name="K4"
+                   Source="images/kosc0.png"
+                   Width="60"
+                   Height="60"
+                   Margin="10"
+                   Tag="3"
+                   MouseDown="Kosc_Click"/>
+
+            <Image x:Name="K5"
+                   Source="images/kosc0.png"
+                   Width="60"
+                   Height="60"
+                   Margin="10"
+                   Tag="4"
+                   MouseDown="Kosc_Click"/>
+
         </StackPanel>
-        <Button Grid.Row="3" Width="50" Height="20" Content="RZUT" Background="#ED275021" Foreground="White" VerticalAlignment="Top"/>
-        <Label Content="0" Grid.Row="3" HorizontalAlignment="Center" FontSize="30" VerticalAlignment="Center"></Label>
+
+        <Button x:Name="btnRzut"
+                Grid.Row="3"
+                Width="70"
+                Height="30"
+                Content="RZUT"
+                Background="#ED275021"
+                Foreground="White"
+                VerticalAlignment="Top"
+                Click="Rzut_Click"/>
+
+        <Label x:Name="txtWynik"
+               Content="0"
+               Grid.Row="3"
+               HorizontalAlignment="Center"
+               FontSize="30"
+               VerticalAlignment="Center"/>
+
     </Grid>
 </Window>
